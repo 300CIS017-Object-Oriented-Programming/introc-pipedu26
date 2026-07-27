@@ -79,14 +79,14 @@ lugar de decir `g++: command not found`.
 todavía está corriendo, vas a ver texto de instalación pasando. Espera a
 que termine y vuelva a aparecer el prompt antes de escribir comandos.
 
-El repositorio ya incluye el archivo `src/sesion1/main.cpp`. Ábrelo desde
+El repositorio ya incluye el archivo `main.cpp`. Ábrelo desde
 el explorador de archivos a la izquierda, pues vas a modificarlo durante
 los ejercicios de hoy.
 
 Compílalo desde la terminal:
 
 ```bash
-g++ src/sesion1/main.cpp -o sonora
+g++ main.cpp -o sonora
 ```
 
 `-o sonora` le dice al compilador cómo debe llamarse el ejecutable que
@@ -412,7 +412,7 @@ Vas a necesitar este detalle en el ejercicio Avanzado de hoy.
 
 ### Inducción al error
 
-Abre `src/sesion1/main.cpp` y reemplaza su contenido con esto:
+Abre `main.cpp` y reemplaza su contenido con esto:
 
 ```cpp
 #include <iostream>
@@ -428,7 +428,7 @@ int main() {
 Compílalo:
 
 ```bash
-g++ src/sesion1/main.cpp -o sonora
+g++ main.cpp -o sonora
 ```
 
 ¿Qué dice el error? ¿A qué línea apunta el compilador, y por qué no es
@@ -436,7 +436,7 @@ exactamente la línea donde falta el punto y coma?
 
 ### Básico
 
-📂 `src/sesion1/main.cpp`
+📂 `main.cpp`
 
 Declara tres variables para una canción de Sonora. `titulo` y `artista`
 son `std::string`, y `duracion_segundos` es `int`. Imprime cada una en su
@@ -473,7 +473,7 @@ int main() {
 
 ### Intermedio
 
-📂 `src/sesion1/main.cpp`
+📂 `main.cpp`
 
 Extiende el programa anterior calculando cuántos minutos y segundos
 completos representa `duracion_segundos`, usando división entera (`/`)
@@ -513,7 +513,7 @@ cálculo sea correcto.
 
 ### Avanzado
 
-📂 `src/sesion1/main.cpp`
+📂 `main.cpp`
 
 Declara dos canciones con sus reproducciones totales (`int`) y los días
 que llevan publicadas (`int`). Calcula el promedio de reproducciones por
